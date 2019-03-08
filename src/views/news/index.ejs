@@ -1,0 +1,11 @@
+<h3>Teste</h3>
+<% if (news.length > 0) { %>
+  <div class="row">
+    <% for(var i = 0; i < news.length; i++) {%>
+      <div class="col-md-12">
+        <h3><%= news[i].titulo %></h3>
+        <p><%= news[i].noticia %></p>
+      </div>
+    <% } %>
+  </div>
+<% } %>
