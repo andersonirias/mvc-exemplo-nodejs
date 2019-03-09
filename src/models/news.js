@@ -1,10 +1,9 @@
 var fs = require('fs');
 
-function news() {
-}
+function news() {}
 
 news.prototype.getLastNews = function(callback) {
-  fs.readFile('/home/anderson/projetos/mvc-exemplo-nodejs/data/noticias.json', 'utf8', function(err, result) {
+  fs.readFile('./data/noticias.json', 'utf8', function(err, result) {
     var data = [];
 
     if (!err) {
