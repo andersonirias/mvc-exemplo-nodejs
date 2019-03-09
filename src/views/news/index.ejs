@@ -1,11 +1,26 @@
-<h3>Teste</h3>
-<% if (news.length > 0) { %>
-  <div class="row">
-    <% for(var i = 0; i < news.length; i++) {%>
-      <div class="col-md-12">
-        <h3><%= news[i].titulo %></h3>
-        <p><%= news[i].noticia %></p>
-      </div>
-    <% } %>
-  </div>
-<% } %>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MVC Exemplo Node.JS</title>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <br/><br/><br/>
+      <h2>MVC Exemplo Node.JS</h2>
+      <br/>
+      <% if (news.length > 0) { %>
+        <div class="row">
+          <% for(var i = 0; i < news.length; i++) {%>
+            <div class="col-md-12 jumbotron">
+              <h4><%= news[i].titulo %></h4>
+              <p><%= news[i].noticia %></p>
+            </div>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>
